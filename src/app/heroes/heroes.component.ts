@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from '../entities/hero';
+import {HEROES} from '../entities/mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -8,6 +9,7 @@ import {Hero} from '../entities/hero';
 })
 export class HeroesComponent implements OnInit {
 
+  heroes = HEROES;
   hero: Hero = {
   id: 1,
   name: 'Thor'
